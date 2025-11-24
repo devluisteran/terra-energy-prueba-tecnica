@@ -71,3 +71,46 @@ tbody tr td{
     cursor: pointer;
 
 }
+.btn-cancel{
+    padding: 5px 10px;
+    border: 2px solid rgb(108, 108, 104);
+    border-radius: 14px;
+    margin-bottom: 4px;
+    background-color: rgb(121, 119, 118);
+    color: rgb(13, 13, 13);
+    cursor: pointer;
+
+}
+
+/* style form */
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0, 0, 0,0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 340;
+}
+
+form .form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 10px;
+}
+
+.required{
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
+}
