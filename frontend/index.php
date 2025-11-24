@@ -45,8 +45,10 @@
 
     </div>
     <?php include("./components/add_task.php"); ?>
-    <script src="./functions/add_task.js"></script>
+    <?php include("./components/edit_task.php"); ?>
     <script src="./functions/get_task.js"></script>
+    <script src="./functions/add_task.js"></script>
+    <script src="./functions/edit_task.js"></script>
 </body>
 
 </html>
