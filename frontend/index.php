@@ -1,3 +1,7 @@
+<?php
+    require("./components/btn_primary.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +16,7 @@
     <div class="container">
         <h1 class="title">Tasks</h1>
         <div>
-            <button class="btn-primary">Add Task</button>
+            <?php showBtnPrimary("btn-add-task","Add Task")?>
         </div>
         <div class="card">
             <div class="div-table">
