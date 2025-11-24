@@ -1,4 +1,5 @@
 <?php
+    require_once("../backend/config/db.php");
     require("./components/btn_primary.php");
 ?>
 
@@ -35,33 +36,8 @@
                             <th>Options</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Tarea 1</td>
-                            <td>Descripcion 1</td>
-                            <td>23/11/2025</td>
-                            <td>28/11/2025</td>
-                            <td>
-                                <div class="button-group">
-                                    <button class="btn-edit">Edit</button>
-                                    <button class="btn-delete">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Tarea 1</td>
-                            <td>Descripcion 1</td>
-                            <td>23/11/2025</td>
-                            <td>28/11/2025</td>
-                            <td>
-                                <div class="button-group">
-                                    <button class="btn-edit">Edit</button>
-                                    <button class="btn-delete">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
+                    <tbody id="tbody-tasks">
+                       
                     </tbody>
                 </table>
             </div>
@@ -70,6 +46,7 @@
     </div>
     <?php include("./components/add_task.php"); ?>
     <script src="./functions/add_task.js"></script>
+    <script src="./functions/get_task.js"></script>
 </body>
 
 </html>

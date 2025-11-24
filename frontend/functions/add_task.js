@@ -1,19 +1,16 @@
 $(document).ready(function(){
     $("#btn-add-task").on("click",(e)=>{
         e.preventDefault();
-        console.log("abriendo modal...");
         $("#modal-add-task").modal();
     });
 
     $("#close_modal_task").on("click",(e)=>{
         e.preventDefault();
-        console.log("cerrando modal...");
         $.modal.close();
     });
 
     $("#form-add-task").submit((e)=>{
         e.preventDefault();
-        console.log("save...");
         let nameTask = $("#nameTask").val();
         let description = $("#descriptionTask").val();
         let deliveryDate = $("#deliveryDate").val();
@@ -46,12 +43,11 @@ function saveTask(payload){
         alert("Error add task")
     })
     .then((response) => {
-        console.log("Success:", response)
         if(response.status == 202){
             alert(response.message);
             $("#nameTask").val('');
             $("#descriptionTask").val('');
-            getTask();
+            getTasks();
         }else{
             alert("Error Add Task");
         }
