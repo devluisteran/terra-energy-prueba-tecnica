@@ -11,9 +11,9 @@ $(document).ready(function(){
 
     $("#form-add-task").submit((e)=>{
         e.preventDefault();
-        let nameTask = $("#nameTask").val();
-        let description = $("#descriptionTask").val();
-        let deliveryDate = $("#deliveryDate").val();
+        let nameTask = $("#modal-add-task #nameTask").val();
+        let description = $("#modal-add-task #descriptionTask").val();
+        let deliveryDate = $("#modal-add-task #deliveryDate").val();
 
         if(nameTask == "" || description ==""){
             alert("Name Task and Description are required");

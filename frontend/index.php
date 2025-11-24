@@ -1,5 +1,4 @@
 <?php
-    require_once("../backend/config/db.php");
     require("./components/btn_primary.php");
 ?>
 
