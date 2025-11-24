@@ -43,7 +43,7 @@ function getTasks(){
                     html+="<td>"
                     html+='<div class="button-group">';
                         html+= '<button class="edit-task btn-edit" onclick="editTask('+element.task_id+')">Edit</button>'
-                        html+= '<button class="btn-delete delete-task" data-id="'+element.task_id+'">Delete</button>'
+                        html+= '<button class="btn-delete delete-task" onclick="deleteTask('+element.task_id+')">Delete</button>'
                     html+='</div>';
                     html+="</td>";
 
